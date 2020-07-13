@@ -1,0 +1,10 @@
+%script{ type: "text/ng-template", id: "shop/shop.html" }
+  .order-cycle-bar.hide-for-large-up
+    = render partial: "shopping_shared/order_cycles"
+
+  - if no_open_order_cycles?
+    = render partial: "shop/messages/closed_shop"
+
+  - else
+    = render partial: "shop/messages/select_oc"
+    = render partial: "shop/products/form"

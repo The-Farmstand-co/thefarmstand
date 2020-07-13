@@ -1,0 +1,37 @@
+%nav.top-bar.show-for-large-up{'data-topbar' => true}
+  %section.top-bar-section
+    %ul.left
+      %li.ofn-logo
+        %a{href: main_app.root_path}
+          %img{src: ContentConfig.logo.url}
+      %li.powered-by
+        %img{src: '/favicon.ico'}
+        %span
+          = t 'powered_by'
+          %a{href: '/'}
+            = t 'title'
+    %ul.center
+      - [*1..7].each do |menu_number|
+        - menu_name = "menu_#{menu_number}"
+        - if ContentConfig[menu_name].present?
+          %li
+            %a{href: t("#{menu_name}_url") }
+              %span.nav-primary
+                = t "#{menu_name}_title"
+    %ul.menu.icons.right
+      - if OpenFoodNetwork::I18nConfig.selectable_locales.count > 1
+        = render 'shared/menu/language_selector'
+
+      - if spree_current_user.nil?
+        = render 'shared/menu/signed_out'
+      - else
+        = render 'shared/menu/signed_in'
+
+      %li.current_hub{"ng-controller" => "CurrentHubCtrl", "ng-show" => "CurrentHub.hub.id", "ng-cloak" => true}
+        %a{href: main_app.shop_path}
+          %span{ class: "top-bar--current-hub-prefix" }
+            = t 'label_shopping'
+            = '@'
+          %span{ class: "top-bar--current-hub-name" } {{ CurrentHub.hub.name | truncate:25 }}
+      %li.cart{"ng-cloak" => true}
+        = render partial: "shared/menu/cart"

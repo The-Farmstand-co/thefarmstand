@@ -1,0 +1,17 @@
+class ProducerProperty < ActiveRecord::Base
+  belongs_to :producer, class_name: 'Enterprise', touch: true
+  belongs_to :property, class_name: 'Spree::Property'
+
+  default_scope { order("#{table_name}.position") }
+
+  def property_name
+    property.name if property
+  end
+
+  def property_name=(name)
+    if name.present?
+      self.property = Spree::Property.find_by_name(name) ||
+                      Spree::Property.create(name: name, presentation: name)
+    end
+  end
+end

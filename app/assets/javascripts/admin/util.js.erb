@@ -1,0 +1,32 @@
+$(document).ready(function() {
+  $('.datetimepicker').datetimepicker({
+    dateFormat: 'yy-mm-dd',
+    timeFormat: 'HH:mm',
+    dayNames: Spree.translations.abbr_day_names,
+    dayNamesMin: Spree.translations.abbr_day_names,
+    monthNames: Spree.translations.month_names,
+    prevText: Spree.translations.previous,
+    nextText: Spree.translations.next,
+    showOn: 'button',
+    controlType: 'select',
+    oneLine: true,
+    buttonImage: "<%= asset_path 'datepicker/cal.gif' %>",
+    buttonImageOnly: true,
+    stepMinute: 15
+  });
+});
+
+$(document).ready(function(){
+  $('a.close').click(function(event){
+    event.preventDefault();
+    $(this).parent().slideUp(250);
+  });
+
+  // Spree locates hidden with prev(), which with our current version of jQuery
+  // does not locate the hidden field, resulting in the delete failing. This
+  // handler updates the hidden field, fixing the problem.
+  $('body').on('click', 'a.remove_fields', function() {
+    $(this).next("input[type=hidden]").val("1");
+    return false;
+  });
+});
