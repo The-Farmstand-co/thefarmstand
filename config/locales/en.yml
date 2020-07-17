@@ -204,13 +204,13 @@ en:
         title: Other Failure (%{count} orders)
         explainer: Automatic processing of these orders failed for an unknown reason. This should not occur, please contact us if you are seeing this.
 
-  home: "OFN"
+  home: "The Farmstand"
   title: The Farmstand
   welcome_to: 'Welcome to '
   site_meta_description: "We begin from the ground up. With farmers and growers ready to tell their stories proudly and truly. With distributors ready to connect people with products fairly and honestly. With buyers who believe that better weekly shopping decisions can…"
   search_by_name: Search by name or suburb...
-  producers: 'Australian Producers'
-  producers_join: Australian producers are now welcome to join the The Farmstand. #FIXME
+  producers: 'American Producers'
+  producers_join: American producers are now welcome to join the The Farmstand. #FIXME
   charges_sales_tax: Charges GST?
   print_invoice: "Print Invoice"
   print_ticket: "Print Ticket"
