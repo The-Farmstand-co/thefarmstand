@@ -8,7 +8,7 @@
   .row
     .options.sixteen.columns.alpha
       - if @enterprise.is_primary_producer
-        / Removing hub functionality, so no profile only producers allowed
+        / Removing hub functionality, no profile-only producers allowed
         / .basic_producer.option.one-third.column.alpha
         /   %a.full-width.button.selector{ ng: { click: "sells='none'", class: "{selected: sells=='none'}" } }
         /     .top
@@ -50,7 +50,7 @@
           %p.description
             = t('.profile_description_text')
 
-        / Removing hub functionality, so no profile only producers allowed
+        / Removing hub functionality, no profile-only producers allowed
         / .full_hub.option.six.columns
         /   %a.full-width.button.selector{ ng: { click: "sells='any'", class: "{selected: sells=='any'}" } }
         /     .top
