@@ -76,6 +76,7 @@ module Spree
       end
 
       def orders_and_distributors
+        params[:q] ||= orders_and_fulfillment_default_filters
         @report = OpenFoodNetwork::OrderAndDistributorReport.new spree_current_user,
                                                                  params,
                                                                  render_content?
