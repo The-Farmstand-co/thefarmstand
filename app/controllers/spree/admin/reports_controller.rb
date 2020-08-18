@@ -267,7 +267,7 @@ module Spree
       def authorized_reports
         all_reports = [
           :orders_and_distributors,
-          :bulk_coop,
+          # :bulk_coop,
           :payments,
           :orders_and_fulfillment,
           :customers,
