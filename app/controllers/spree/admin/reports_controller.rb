@@ -269,16 +269,16 @@ module Spree
         all_reports = [
           :orders_and_distributors,
           # :bulk_coop,
-          :payments,
-          :orders_and_fulfillment,
+          # :payments,
+          # :orders_and_fulfillment,
           :customers,
           :products_and_inventory,
-          # :users_and_enterprises,
-          # :enterprise_fee_summary,
+          :users_and_enterprises,
+          :enterprise_fee_summary,
           :order_cycle_management,
           :sales_tax,
           :xero_invoices,
-          :packing
+          # :packing
         ]
         reports = all_reports.select { |action| can? action, Spree::Admin::ReportsController }
         reports.map { |report| [report, describe_report(report)] }.to_h
