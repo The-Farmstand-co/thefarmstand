@@ -738,8 +738,8 @@ en:
           permalink_tip: "This permalink is used to create the url to your shop: %{link}your-shop-name/shop"
           link_to_front: Link to shop front
           link_to_front_tip: A direct link to your shopfront on the The Farmstand.
-          openfoodnetwork_uid: The Farmstand UID
-          openfoodnetwork_uid_tip: The unique id used to identify the enterprise on The Farmstand.
+          ofn_uid: The Farmstand UID
+          ofn_uid_tip: The unique id used to identify the enterprise on The Farmstand.
         shipping_methods:
           name: Name
           applies: Applies?
@@ -841,7 +841,7 @@ en:
         producer: Producer
       change_type_form:
         producer_profile: Producer Profile
-        connect_openfoodnetwork: Connect through The Farmstand
+        connect_ofn: Connect through The Farmstand
         always_free: ALWAYS FREE
         producer_description_text: Add your products to The Farmstand, allowing hubs to stock your products in their stores.
         producer_shop: Producer Shop
@@ -1218,7 +1218,7 @@ en:
         checkout: "Checkout now"
         already_ordered_products: "Already ordered in this order cycle"
     register_call:
-      selling_on_OpenFoodNetwork: "Interested in getting on the The Farmstand?"
+      selling_on_ofn: "Interested in getting on the The Farmstand?"
       register: "Register here"
     footer:
       footer_secure: "Secure and trusted."
@@ -2155,7 +2155,7 @@ See the %{link} to find out more about %{sitename}'s features and to start using
   spree_user_enterprise_limit_error: "^%{email} is not permitted to own any more enterprises (limit is %{enterprise_limit})."
   spree_variant_product_error: must have at least one variant
   your_profil_live: "Your profile live"
-  on_openfoodnetwork_map: "on the The Farmstand map"
+  on_ofn_map: "on the The Farmstand map"
   see: "See"
   live: "live"
   manage: "Manage"
@@ -2732,7 +2732,7 @@ See the %{link} to find out more about %{sitename}'s features and to start using
       users:
         order: "Order"
     registration:
-      welcome_to_openfoodnetwork: "Welcome to the The Farmstand!"
+      welcome_to_ofn: "Welcome to the The Farmstand!"
       signup_or_login: "Start By Signing Up (or logging in)"
       have_an_account: "Already have an account?"
       action_login: "Log in now."
@@ -3208,7 +3208,7 @@ See the %{link} to find out more about %{sitename}'s features and to start using
           order_total: "Order Total"
       overview:
         enterprises_header:
-          openfoodnetwork_with_tip: Enterprises are Producers and/or Hubs and are the basic unit of organisation within the The Farmstand.
+          ofn_with_tip: Enterprises are Producers and/or Hubs and are the basic unit of organisation within the The Farmstand.
         products:
           active_products:
             zero: "You don't have any active products."
