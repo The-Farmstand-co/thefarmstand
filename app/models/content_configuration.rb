@@ -41,7 +41,7 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
   preference :menu_2_icon_name, :string, default: "ofn-i_037-map"
   preference :menu_3, :boolean, default: true
   preference :menu_3_icon_name, :string, default: "ofn-i_036-producers"
-  preference :menu_4, :boolean, default: true
+  preference :menu_4, :boolean, default: false
   preference :menu_4_icon_name, :string, default: "ofn-i_035-groups"
   preference :menu_5, :boolean, default: false
   preference :menu_5_icon_name, :string, default: "ofn-i_013-help"
