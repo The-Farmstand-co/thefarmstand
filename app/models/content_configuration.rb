@@ -14,7 +14,7 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
   # Home page
   preference :home_page_alert_html, :text
   preference :home_hero, :file
-  preference :home_show_stats, :boolean, default: true
+  preference :home_show_stats, :boolean, default: false
   has_attached_file :home_hero, default_url: "/assets/home/home.jpg"
 
   # Producer sign-up page
