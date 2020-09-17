@@ -2,11 +2,11 @@
 @import "fonts";
 
 @mixin headingFont {
-  font-family: "Abril Fatface", sans-serif;
+  font-family: "Abril Fatface", serif;
 }
 
 @mixin bodyFont {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 $headingFont: "Abril Fatface";
@@ -116,7 +116,7 @@ ul.bullet-list, ul.check-list {
 
   li:before {
     content: "•";
-    font-family: "OFN";
+    font-family: "Montserrat";
     margin: 0 0.25em 0 -1.25em;
     display: inline-block;
     font-weight: normal;
