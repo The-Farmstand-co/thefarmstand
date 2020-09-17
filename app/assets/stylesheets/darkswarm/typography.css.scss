@@ -1,15 +1,16 @@
 @import "branding";
+@import "fonts";
 
 @mixin headingFont {
-  font-family: "Oswald", sans-serif;
+  font-family: "Abril Fatface", sans-serif;
 }
 
 @mixin bodyFont {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
-$headingFont: "Oswald";
-$body-font: "Roboto", Arial, sans-serif;
+$headingFont: "Abril Fatface";
+$body-font: "Montserrat", Arial, sans-serif;
 
 body {
   @include bodyFont;
