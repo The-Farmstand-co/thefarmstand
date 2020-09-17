@@ -154,7 +154,7 @@ nav.top-bar {
   }
 
   ul .nav-primary {
-    @include headingFont;
+    @include bodyFont;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 16px;
