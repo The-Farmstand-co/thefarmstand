@@ -12,6 +12,7 @@ class HomeController < BaseController
         'users', Spree::Order.complete.select('DISTINCT spree_orders.user_id')
       )
     end
+    render :index
   end
 
   def sell; end
