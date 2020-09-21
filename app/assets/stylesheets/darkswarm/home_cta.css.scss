@@ -9,20 +9,26 @@
   .small-6{
     padding:0;
     &.left{
-      margin-right: 5px;
+      .button{
+        margin-right: 5px;
+      }
     }
     &.right{
-      margin-left: 5px;
+      .button{
+        margin-left: 5px;
+      }
     }
   }
 
   .button{
-    width:100%;
+    width:calc(100% - 5px);
     border-radius: 0;
     background: #303948;
     span{
-      width:300px;
+      display: block;
+      width:225px;
       text-align:left;
+      float:right;
     }
   }
 }
