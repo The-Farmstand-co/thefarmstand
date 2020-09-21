@@ -5,5 +5,24 @@
 @import "variables";
 
 #cta {
-  
+
+  .small-6{
+    padding:0
+    &.left{
+      margin-right: 5px;
+    }
+    &.right{
+      margin-left: 5px;
+    }
+  }
+
+  .button{
+    width:100%;
+    border-radius: 0;
+    background: #303948;
+    span{
+      width:300px;
+      text-align:left;
+    }
+  }
 }
