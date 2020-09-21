@@ -1463,8 +1463,9 @@ en:
   system_step3: "3. Pick-up / Delivery"
   system_step3_text: "Hang on for your delivery, or visit your producer or hub for a more personal connection with your food. Food shopping as diverse as nature intended it."
 
-  cta_headline: "Shopping that makes the world a better place."
-  cta_label: "I'm Ready"
+  cta_headline_consumer: "Consumers"
+  cta_headline_producer: "Producers"
+  cta_label: "click here to find out more!"
 
   stats_headline: "We're creating a new food system."
   stats_producers: "food producers"
