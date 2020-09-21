@@ -5,6 +5,10 @@
 @import "variables";
 
 #cta {
+  ::before{
+    content:"";
+    display: table;
+  }
 
   .small-6{
     padding:0;
