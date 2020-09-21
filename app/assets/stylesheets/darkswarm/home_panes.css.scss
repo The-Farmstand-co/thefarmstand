@@ -7,10 +7,16 @@
 .pane{
   background:#fff;
 
+  .row{
+    @media all and (min-width: 768px) {
+      padding: 0 100px;
+      margin-top: 3rem;
+    }
+  }
+
   h2{
     color:#303948;
     @media all and (min-width: 768px) {
-      margin-top: 3rem;
       font-size: 64px;
     }
   }
@@ -22,8 +28,12 @@
       margin-bottom:10rem;
     }
   }
-  li{
+  .bullet{
+    font-family: "Abril Fatface";
     color:#A69385;
+    text-align:right;
+    width:100%;
+    padding-left:50px;
   }
 }
 
