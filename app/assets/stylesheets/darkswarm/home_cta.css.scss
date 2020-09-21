@@ -5,9 +5,8 @@
 @import "variables";
 
 #cta {
-  ::before{
+  &:before{
     content:"";
-    display: table;
   }
 
   .small-6{
