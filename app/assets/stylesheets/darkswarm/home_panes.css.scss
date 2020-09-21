@@ -48,7 +48,7 @@
       input{
         margin:0;
         border-radius:10px;
-        &:placeholder{
+        &::placeholder{
           color:#303948
         }
       }
