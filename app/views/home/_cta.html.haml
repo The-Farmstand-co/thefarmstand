@@ -1,10 +1,13 @@
 #cta.pane
   .row
-    .small-12.columns.text-center
-      %h2
-        = t :cta_headline_consumer
-        %h2
-        = t :cta_headline_producer
-      %br
+    .small-6.columns.text-right
+      / %h2
+      /   = t :cta_headline_consumer
+      /   %h2
+      /   = t :cta_headline_producer
+      / %br
+      %a.button.transparent{href: "/shops"}
+        = t :cta_label
+    .small-6.columns.text-right
       %a.button.transparent{href: "/shops"}
         = t :cta_label
