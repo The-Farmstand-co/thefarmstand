@@ -1438,7 +1438,23 @@ en:
 
   homepage_headline: "Welcome to Farmstand!"
   homepage_subheadline: "Standing Together for a Better Food System"
-  homepage_body: "We are an online platform that connects farmers and consumers in /n the Hudson Valley to foster rich direct relationships that form the basis of a strong local economy." 
+  homepage_body: "We are an online platform that connects farmers and consumers in <br> the Hudson Valley to foster rich direct relationships that form the basis of a strong local economy." 
+
+  cta_headline_consumer: "Consumers"
+  cta_headline_producer: "Producers"
+  cta_label: "click here to find out more!"
+
+  consumer_pane_headline: "Farmstand for Consumers"
+  consumer_pane_body: "Local is better - better for us, for the land, and for our communities. Become part of our local food system by supporting the farms that make it work."
+  consumer_pane_bullet1: "Find local farms"
+  consumer_pane_bullet2: "Buy local products"
+  consumer_pane_bullet3: "Discover events"
+
+  producer_pane_headline: "Local is better - better for us, for the land, and for our communities. Become part of our local food system by supporting the farms that make it work."
+  producer_pane_body: "Local is better - better for us, for the land, and for our communities. Become part of our local food system by supporting the farms that make it work."
+  producer_pane_bullet1: "List your farm"
+  producer_pane_bullet2: "Create an online-store"
+  producer_pane_bullet3: "Advertise events"
 
   brandstory_headline: "Food, unincorporated."
   brandstory_intro: "Sometimes the best way to fix the system is to start a new one…"
@@ -1462,10 +1478,6 @@ en:
   system_step2_text: "Transform your transactions with affordable local food from diverse producers and hubs. Know the stories behind your food and the people who make it!"
   system_step3: "3. Pick-up / Delivery"
   system_step3_text: "Hang on for your delivery, or visit your producer or hub for a more personal connection with your food. Food shopping as diverse as nature intended it."
-
-  cta_headline_consumer: "Consumers"
-  cta_headline_producer: "Producers"
-  cta_label: "click here to find out more!"
 
   stats_headline: "We're creating a new food system."
   stats_producers: "food producers"
