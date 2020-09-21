@@ -5,7 +5,7 @@
 
 .darkswarm {
   // #search
-  @include placeholder(rgba(0, 0, 0, 0.4), #777);
+  @include placeholder(#303948, #777);
 
   // ordering
   product {
