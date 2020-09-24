@@ -9,7 +9,7 @@ class ShopsController < BaseController
   end
 
   private
-  	def shop_params
+  	def shops_params
   		params.require(:shops).permit(:name, :enterprise_id, :search)
   	end
 end
