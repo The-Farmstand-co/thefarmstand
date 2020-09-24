@@ -4,6 +4,12 @@ class ShopsController < BaseController
   before_filter :enable_embedded_shopfront
 
   def index
-    @enterprises = ShopsListService.new.open_shops
+  	@enterprises = Enterprise.search(params[:search])
+    # @enterprises = ShopsListService.new.open_shops
   end
+
+  private
+  	def shop_params
+  		params.require(:shops).permit(:name, :enterprise_id, :search)
+  	end
 end

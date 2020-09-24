@@ -203,6 +203,19 @@ class Enterprise < ActiveRecord::Base
     count(distinct: true)
   end
 
+  def self.search(search)
+    if search
+      enterprise_name = Enterprise.find_by(name: search)
+      if enterprise_name
+        self.where(enterprise_id: enterprise_name)
+      else
+        @enterprises = Enterprise.all
+      end
+    else
+      @enterprises = Enterprise.all
+    end
+  end
+
   def contact
     contact = users.where(enterprise_roles: { receives_notifications: true }).first
     contact || owner
