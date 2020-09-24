@@ -5,7 +5,7 @@
   - cache(*CacheService::FragmentCaching.ams_shops) do
     = inject_enterprises(@enterprises)
 
-= form_tag shops_index_path, :method => :get do
+= form_tag shops_path, :method => :get do
   = label_tag(:search, "Search Shops")
   = text_field_tag :search, params[:search]
   = submit_tag("Search", :name => nil)
