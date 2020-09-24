@@ -35,11 +35,11 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
   preference :group_signup_detail_html, :text, default: I18n.t(:content_configuration_detail)
 
   # Main URLs
-  preference :menu_1, :boolean, default: true
+  preference :menu_1, :boolean, default: false
   preference :menu_1_icon_name, :string, default: "ofn-i_019-map-pin"
-  preference :menu_2, :boolean, default: true
+  preference :menu_2, :boolean, default: false
   preference :menu_2_icon_name, :string, default: "ofn-i_037-map"
-  preference :menu_3, :boolean, default: true
+  preference :menu_3, :boolean, default: false
   preference :menu_3_icon_name, :string, default: "ofn-i_036-producers"
   preference :menu_4, :boolean, default: false
   preference :menu_4_icon_name, :string, default: "ofn-i_035-groups"
