@@ -1,5 +1,5 @@
 Darkswarm.controller "HomeCtrl", ($scope) ->
-  $scope.brandStoryExpanded = false
 
-  $scope.toggleBrandStory = ->
-    $scope.brandStoryExpanded = !$scope.brandStoryExpanded
+  $scope.scrollToSection = (element) ->
+    element.scrollIntoView({behavior:"smooth"});
+    
