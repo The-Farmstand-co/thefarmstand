@@ -1,13 +1,13 @@
 #cta
   .small-6.columns.text-right.left
-    %a.button{href: "javascript:void(0)","ng-click" => "scrollToSection('#consumer')"}
+    %a.button{href: "javascript:void(0)","ng-click" => "scrollToSectionById('consumer')"}
       %span
         %b
           = t :cta_headline_consumer
         %br
         = t :cta_label
   .small-6.columns.text-right.right
-    %a.button{href: "javascript:void(0)","ng-click" => "scrollToSection('#producer')"}
+    %a.button{href: "javascript:void(0)","ng-click" => "scrollToSectionById('producer')"}
       %span
         %b
           = t :cta_headline_producer
