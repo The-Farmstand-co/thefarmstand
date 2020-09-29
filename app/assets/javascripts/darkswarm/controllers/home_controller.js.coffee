@@ -1,5 +1,6 @@
 Darkswarm.controller "HomeCtrl", ($scope) ->
 
   $scope.scrollToSection = (element) ->
-    element.scrollIntoView({behavior:"smooth"});
+  	let el = document.getElementById(element)
+    el.scrollIntoView({behavior:"smooth"});
     
