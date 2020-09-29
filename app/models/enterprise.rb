@@ -205,7 +205,7 @@ class Enterprise < ActiveRecord::Base
 
   def self.search(search)
     if search
-      enterprise_name = Enterprise.find_by(name: search)
+      enterprise_name = Enterprise.find_by_name(search)
       # enterprise_name = Enterprise.where("name LIKE :search", search: "%#{search}%")
       if enterprise_name
         self.where(enterprise_id: enterprise_name)
