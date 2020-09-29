@@ -5,6 +5,7 @@ Darkswarm.controller "HomeCtrl", ($scope) ->
     el = document.getElementById(element);
     elPosition = el.getBoundingClientRect().top;
     headerOffset = 120;
+    console.log(elPosition, headerOffset, offsetPosition)
     offsetPosition = elPosition - headerOffset;
     window.scrollTo({
     	top: offsetPosition,
