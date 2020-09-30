@@ -6,7 +6,7 @@
 #shops.pane{
   background:none;
   position: relative;
-  margin-top: 30vh;
+  margin-top: 10vh;
   &:before{
     content: "";
     background-color: $ofn-grey;
@@ -23,6 +23,7 @@
   }
   .row{
     padding-top:0;
+    padding-bottom:25vh;
     h1{
       font-size: 48px;
     }
@@ -41,7 +42,7 @@
         }
       }
       .search-submit{
-        margin:0;
+        margin:0 10px 0 0;
         .button{
           padding:10px 40px;
           color:#fff;
