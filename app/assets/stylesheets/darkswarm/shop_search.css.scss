@@ -5,19 +5,24 @@
 
 #shops.pane{
   background:none;
+  position: relative;
+  margin-top: 10vh;
   &:before{
     content: "";
     background-color: $ofn-grey;
     background:linear-gradient(180deg, #FFFFFF 7.81%, rgba(255, 255, 255, 0) 75%), url("/assets/shops-search-background.png");
     background-size: cover;
     background-position: center center;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
+  }
+  .row{
+    padding-top:0;
   }
 }
 // .shop-searchbar {
