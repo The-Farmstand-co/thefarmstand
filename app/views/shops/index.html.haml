@@ -5,19 +5,17 @@
   - cache(*CacheService::FragmentCaching.ams_shops) do
     = inject_enterprises(@enterprises)
 
+#panes
+  #shops.pane
+    .row
+      .small-12.medium-6.medium-offset-3.columns.text-center
+        %h2
+          = t :shops_headline
+
 = form_tag shops_path, :method => :get do
   = label_tag(:search, "Search Shops")
   = text_field_tag :search, params[:search]
   = submit_tag("Search", :name => nil)
-
-/ #panes
-/   #shops.pane
-/     .row
-/       .small-12.medium-6.medium-offset-3.columns.text-center
-/         %h2
-/           = t :shops_headline
-/         %p.text-big
-/           = t :shops_text
-
+  
 / = render "hubs"
 = render "shared/footer-redesign"
