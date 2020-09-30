@@ -16,6 +16,7 @@ body {
   @include bodyFont;
 
   font-weight: 400;
+  color:#303948;
 }
 
 a {
@@ -96,6 +97,7 @@ small, .small {
 
 h1, h2, h3, h4, h5, h6 {
   @include headingFont;
+  color:#303948;
 
   padding: 0px;
 }
