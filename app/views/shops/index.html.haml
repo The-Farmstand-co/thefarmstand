@@ -12,9 +12,9 @@
         %h2
           = t :shops_headline
       .small-12.columns.text-center
-        = form_tag (shops_path, :method => :get) do
-          = text_field_tag (:search, params[:search], placeholder: "Enter your Zipcode, Farm, or Product" )
-          = submit_tag("Search", :name => nil)
+        = form_tag shops_path, :method => :get do
+          = text_field_tag :search, params[:search], placeholder: "Enter your Zipcode, Farm, or Product"
+          = submit_tag "Search", :name => nil
 
 / = render "hubs"
 = render "shared/footer-redesign"
