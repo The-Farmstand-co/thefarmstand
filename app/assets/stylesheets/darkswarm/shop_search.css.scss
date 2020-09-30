@@ -25,23 +25,32 @@
     padding-top:0;
   }
   .shop-search{
-    .search-input{
-      background:#DDD8CA;
-      padding:5px;
-      border-radius:10px;
-      input{
-        margin:0;
+    form{
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+      .search-input{
+        background:#DDD8CA;
+        padding:5px;
         border-radius:10px;
-        &::placeholder{
-          color:#303948
+        input{
+          margin:0;
+          border-radius:10px;
+          &::placeholder{
+            color:#303948
+          }
         }
       }
-    }
-    .button{
-      padding:15px 50px;
-      color:#fff;
-      font-size:15px;
-      background: #C8A92A;
+      .search-submit{
+        margin:0;
+        .button{
+          padding:15px 50px;
+          color:#fff;
+          font-size:15px;
+          background: #C8A92A;
+          border-radius:10px;
+        }
+      }
     }
   }
 }
