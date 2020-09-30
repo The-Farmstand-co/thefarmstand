@@ -4,11 +4,12 @@
 
 
 #shops.pane{
+  background:none;
   &:before{
     content: "";
     @include fullbg;
     background-color: $ofn-grey;
-    background-image: url("/assets/shops-search-background.png");
+    background:linear-gradient(180deg, #FFFFFF 7.81%, rgba(255, 255, 255, 0) 75%), url("/assets/shops-search-background.png");
     position: fixed;
     left: 0;
     right: 0;
