@@ -30,6 +30,7 @@ Darkswarm.controller "EnterprisesCtrl", ($scope, $rootScope, $timeout, $location
       $scope.closed_shops_loading = false
 
   $timeout ->
+    console.log("timeout")
     if $location.search()['show_closed']?
       $scope.showClosedShops()
 
