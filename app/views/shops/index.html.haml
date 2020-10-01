@@ -5,16 +5,16 @@
   - cache(*CacheService::FragmentCaching.ams_shops) do
     = inject_enterprises(@enterprises)
 
-#shops.pane
+#shops.pane{"ng-controller" => "EnterprisesCtrl", "ng-cloak" => true}
   .row
     .small-12.medium-10.medium-offset-1.columns.text-center
       %h1
         = t :shops_headline
     .small-12.columns.text-center.shop-search
       = form_tag shops_path, :method => :get do
-        = text_field_tag :search, params[:search], placeholder: "Enter your Zipcode, Farm, or Product"
+        = text_field_tag :search, params[:search], placeholder: "Enter your Zipcode, Farm, or Product", "ng-model" => "search"
         .search-submit
           = submit_tag "Search", :name => nil, class: "button"
-    .small-12.columnes.text-center.results{"ng-controller" => "EnterprisesCtrl", "ng-cloak" => true}
+    .small-12.columnes.text-center.results
 / = render "hubs"
 = render "shared/footer-redesign"
