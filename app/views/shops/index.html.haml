@@ -15,6 +15,6 @@
         = text_field_tag :search, params[:search], placeholder: "Enter your Zipcode, Farm, or Product"
         .search-submit
           = submit_tag "Search", :name => nil, class: "button"
-
+    .small-12.columnes.text-center.results{"ng-controller" => "EnterprisesCtrl", "ng-cloak" => true}
 / = render "hubs"
 = render "shared/footer-redesign"
