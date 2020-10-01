@@ -11,6 +11,7 @@ Darkswarm.controller "EnterprisesCtrl", ($scope, $rootScope, $timeout, $location
   $scope.distanceMatchesShown = false
   $scope.closed_shops_loading = false
   $scope.closed_shops_loaded = false
+  console.log($scope, $rootScope, $timeout, $location, Enterprises, Search, $document, HashNavigation, FilterSelectorsService, EnterpriseModal, enterpriseMatchesNameQueryFilter, distanceWithinKmFilter)
 
   $scope.$watch "query", (query)->
     $scope.resetSearch(query)
