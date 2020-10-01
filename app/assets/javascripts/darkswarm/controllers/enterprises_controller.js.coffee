@@ -14,6 +14,7 @@ Darkswarm.controller "EnterprisesCtrl", ($scope, $rootScope, $timeout, $location
   console.log($scope, $rootScope, $timeout, $location, Enterprises, Search, $document, HashNavigation, FilterSelectorsService, EnterpriseModal, enterpriseMatchesNameQueryFilter, distanceWithinKmFilter)
 
   $scope.$watch "query", (query)->
+    console.log(query)
     $scope.resetSearch(query)
 
   $scope.resetSearch = (query) ->
