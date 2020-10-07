@@ -15,6 +15,32 @@
         = text_field_tag :search, params[:search], placeholder: "Enter your Zipcode, Farm, or Product", "ng-model" => "search", inputmode: "search", type: "search"
         .search-submit
           = submit_tag "Search", :name => nil, class: "button"
-    .small-12.columnes.text-center.results
+  .row
+    .small-12.columns
+      .name-matches{"ng-show" => "nameMatchesFiltered.length > 0"}
+        %h2
+          = t :hubs_matches
+        = render "hubs_table", enterprises: "nameMatches"
+
+      .distance-matches{"ng-if" => "nameMatchesFiltered.length == 0 || distanceMatchesShown"}
+        %h2{"ng-show" => "nameMatchesFiltered.length > 0 || query.length > 0"}
+          = t :hubs_matches
+          %span{"ng-show" => "nameMatchesFiltered.length > 0"} {{ nameMatchesFiltered[0].name }}...
+          %span{"ng-hide" => "nameMatchesFiltered.length > 0"} {{ query }}...
+
+        = render "hubs_table", enterprises: "distanceMatches"
+
+      .show-distance-matches{"ng-show" => "nameMatchesFiltered.length > 0 && !distanceMatchesShown"}
+        %a{href: "", "ng-click" => "showDistanceMatches()"}
+          = t :hubs_distance_filter, location: "{{ nameMatchesFiltered[0].name }}"
+  .more-controls
+    %img.spinner.text-center{ng: {show: "closed_shops_loading"}, src: "/assets/spinning-circles.svg" }
+    %span{ng: {if: "!show_closed", cloak: true}}
+      %a.button{href: "", ng: {click: "showClosedShops()"}}
+        = t '.show_closed_shops'
+    %span{ng: {if: "show_closed", cloak: true}}
+      %a.button{href: "", ng: {click: "hideClosedShops()"}}
+        = t '.hide_closed_shops'
+    %a.button{href: main_app.map_path}= t '.show_on_map'
 / = render "hubs"
 = render "shared/footer-redesign"
