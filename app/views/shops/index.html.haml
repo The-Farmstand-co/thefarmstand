@@ -12,7 +12,7 @@
         = t :shops_headline
     .small-12.columns.text-center.shop-search
       = form_tag shops_path, :method => :get do
-        = text_field_tag :search, params[:search], placeholder: "Enter your Zipcode, Farm, or Product", "ng-model" => "search", inputmode: "search"
+        = text_field_tag :search, params[:search], placeholder: "Enter your Zipcode, Farm, or Product", "ng-model" => "search", inputmode: "search", type: "search"
         .search-submit
           = submit_tag "Search", :name => nil, class: "button"
     .small-12.columnes.text-center.results
