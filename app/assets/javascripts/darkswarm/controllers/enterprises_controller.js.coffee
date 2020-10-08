@@ -5,8 +5,8 @@ Darkswarm.controller "EnterprisesCtrl", ($scope, $rootScope, $timeout, $location
   $scope.query = Search.search()
   $scope.openModal = EnterpriseModal.open
   $scope.activeTaxons = []
-  $scope.show_profiles = false
-  $scope.show_closed = false
+  $scope.show_profiles = true
+  $scope.show_closed = true
   $scope.filtersActive = false
   $scope.distanceMatchesShown = false
   $scope.closed_shops_loading = false
