@@ -23,7 +23,7 @@
   }
   .row{
     padding-top:0;
-    padding-bottom:25vh;
+    padding-bottom:0;
     h1{
       font-size: 48px;
     }
@@ -52,6 +52,9 @@
         }
       }
     }
+  }
+  .results{
+    background: #fff;
   }
 }
 // .shop-searchbar {
