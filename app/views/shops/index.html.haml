@@ -20,6 +20,7 @@
         "ofn-disable-enter" => true}
         / .search-submit
         /   = submit_tag "Search", :name => nil, class: "button"
+  .row
     .small-12.columns
       .name-matches{"ng-show" => "nameMatchesFiltered.length > 0"}
         %h2
