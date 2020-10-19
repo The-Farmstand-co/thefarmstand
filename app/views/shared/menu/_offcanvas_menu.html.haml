@@ -2,14 +2,14 @@
   %ul.off-canvas-list
     %li.ofn-logo
       %a{href: main_app.root_path}
-        %img{src: ContentConfig.logo_mobile.url, srcset: ContentConfig.logo_mobile_svg.url, width: "75", height: "26"}
+        %img{src: ContentConfig.logo_mobile.url, srcset: ContentConfig.logo_mobile.url, width: "75", height: "26"}
     - [*1..7].each do |menu_number|
       - menu_name = "menu_#{menu_number}"
       - if ContentConfig[menu_name].present?
         %li.li-menu
           %a{href: t("#{menu_name}_url") }
             %span.nav-primary
-              %i{class: ContentConfig["#{menu_name}_icon_name"]}
+              / %i{class: ContentConfig["#{menu_name}_icon_name"]}
               = t "#{menu_name}_title"
     - if OpenFoodNetwork::I18nConfig.selectable_locales.count > 1
       %li.language-switcher.li-menu
