@@ -9,7 +9,7 @@ class ContentConfiguration < Spree::Preferences::FileConfiguration
   preference :logo_mobile_svg, :file
   has_attached_file :logo, default_url: "/assets/farmstand-logo.png"
   has_attached_file :logo_mobile, default_url: "/assets/farmstand-logo-mobile.png"
-  has_attached_file :logo_mobile_svg, default_url: "/assets/ofn-logo-mobile.svg"
+  has_attached_file :logo_mobile_svg, default_url: ""
 
   # Home page
   preference :home_page_alert_html, :text
