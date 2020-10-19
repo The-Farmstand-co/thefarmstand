@@ -10,7 +10,7 @@
     .small-12.medium-10.medium-offset-1.columns.text-center
       %h1
         = t :shops_headline
-    .small-12.columns.text-center.shop-search
+    .small-12.columns.text-center.shop-search#active-table-search
       %input{type: "search",
         "ng-model" => "search",
         placeholder: t('search_by_name'),
