@@ -305,14 +305,14 @@ nav.top-bar {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   body.off-canvas {
     // padding required to placehold for fixed menu bar
     padding-top: $topbar-height;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1025px) {
   body.off-canvas {
     // padding required to placehold for fixed menu bar
     padding-top: 0;
