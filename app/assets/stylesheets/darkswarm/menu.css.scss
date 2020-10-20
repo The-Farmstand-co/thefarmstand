@@ -246,7 +246,7 @@ nav.top-bar {
 [role="main"] {
   margin-top: 2.8em;
 
-  @media #{$small-up} {
+  @media #{$medium-up} {
     margin-top: 0;
   }
 }
