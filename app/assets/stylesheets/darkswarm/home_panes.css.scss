@@ -8,9 +8,9 @@
   background:#fff;
 
   .row{
-    padding: 2rem 30px;
+    padding: 2rem 10px;
     @media all and (min-width: 768px) {
-      padding: 3rem 60px;
+      padding: 3rem 30px;
     }
   }
 
@@ -32,8 +32,10 @@
     color:#A69385;
     text-align:left;
     width:100%;
-    padding-left:50px;
     padding-top:1rem;
+    @media all and (min-width: 768px) {
+      padding-left:50px;
+    }
   }
   .search,
   .create{
