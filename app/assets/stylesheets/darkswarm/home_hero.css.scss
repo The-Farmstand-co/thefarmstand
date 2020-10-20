@@ -10,6 +10,7 @@
   h1 {
     color:#303948;
     margin-top: 2rem;
+    font-size: 3rem;
 
     @media all and (min-width: 768px) {
       margin-top: 3rem;
@@ -19,6 +20,7 @@
 
   h2{
     color:#A69385;
+    font-size: 1.5rem;
 
     @media all and (min-width: 768px) {
       font-size: 2rem;
@@ -28,10 +30,10 @@
 
   p{
     color:#303948;
-
+    font-size: 1rem;
+    
     @media all and (min-width: 768px) {
-      font-size: 2rem;
-      margin-bottom:10rem;
+      margin-bottom:12rem;
       width:600px;
     }
   }
