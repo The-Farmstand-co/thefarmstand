@@ -230,10 +230,6 @@ nav.top-bar {
   @include box-shadow(none);
 }
 
-// .off-canvas-wrap.move-right .tab-bar .menu-icon span {
-//   box-shadow: 0 0px 0 1px #666, 0 7px 0 1px #666, 0 14px 0 1px #666;
-// }
-
 .tab-bar .menu-icon span::after {
   box-shadow: 0 0 0 1px black, 0 7px 0 1px black, 0 14px 0 1px black;
 }
@@ -242,7 +238,6 @@ nav.top-bar {
   padding: 0;
 }
 
-// Leave space for tab bar, in screens smaller than 768px.
 [role="main"] {
   margin-top: 2.8em;
 }
