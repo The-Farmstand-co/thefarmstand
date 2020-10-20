@@ -16,20 +16,20 @@
   h2{
     color:#303948;
     @media all and (min-width: 768px) {
-      font-size: 64px;
+      font-size: 4rem;
     }
   }
   p{
     color:#303948;
 
     @media all and (min-width: 768px) {
-      font-size: 18px;
+      font-size: 1rem;
       margin-bottom:1rem;
     }
   }
   .bullet{
     font-family: "Abril Fatface";
-    font-size:34px;
+    font-size:2rem;
     color:#A69385;
     text-align:left;
     width:100%;
@@ -57,7 +57,7 @@
     .button{
       padding:15px 50px;
       color:#fff;
-      font-size:15px;
+      font-size:1rem;
       background: #C8A92A;
     }
   } 
