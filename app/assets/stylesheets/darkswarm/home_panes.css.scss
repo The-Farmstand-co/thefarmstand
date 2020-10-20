@@ -8,6 +8,7 @@
   background:#fff;
 
   .row{
+    padding: 2rem 30px;
     @media all and (min-width: 768px) {
       padding: 3rem 100px;
     }
@@ -29,15 +30,21 @@
   }
   .bullet{
     font-family: "Abril Fatface";
-    font-size:2rem;
+    font-size:1.5rem;
     color:#A69385;
     text-align:left;
     width:100%;
     padding-left:50px;
+    @media all and (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
   .search,
   .create{
-    margin-top:6rem;
+    margin-top:2rem;
+    @media all and (min-width: 768px) {
+      margin-top:6rem;
+    }
     p{
       font-weight: bold;
       margin-bottom:1rem
