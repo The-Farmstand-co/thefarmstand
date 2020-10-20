@@ -242,11 +242,11 @@ nav.top-bar {
   padding: 0;
 }
 
-// Leave space for tab bar, in screens smaller than large.
+// Leave space for tab bar, in screens medium than large.
 [role="main"] {
   margin-top: 2.8em;
 
-  @media #{$large-up} {
+  @media #{$medium-up} {
     margin-top: 0;
   }
 }
