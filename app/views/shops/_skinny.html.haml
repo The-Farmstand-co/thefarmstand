@@ -1,6 +1,6 @@
 .row.active_table_row{"ng-if" => "hub.is_distributor", "ng-click" => "toggle($event)", "ng-class" => "{'closed' : !open(), 'is_distributor' : producer.is_distributor}"}
   .columns.small-12
-    %span.margin-top.hub_image{"ng-style" => "background:url({{::hub.promo_image}})"}
+    %span.margin-top.hub_image{"ng-style" => "{{ background:url(::hub.promo_image) }}"}
   .columns.small-12.skinny-head
     %a.hub{"ng-href" => "{{::hub.path}}", "ng-attr-target" => "{{ embedded_layout ? '_blank' : undefined}}", "ng-class" => "{primary: hub.active, secondary: !hub.active}", "ofn-change-hub" => "hub", "data-is-link" => "true"}
       / %i{ng: {class: "::hub.icon_font"}}
