@@ -8,6 +8,7 @@
 
 .active_table {
   margin: 2em 0em;
+  display: flex;
 
   @include user-select(none);
 
