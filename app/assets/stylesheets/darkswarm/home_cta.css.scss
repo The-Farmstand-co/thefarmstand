@@ -31,6 +31,7 @@
     border-radius: 0;
     background: #303948;
     margin-bottom:0px;
+    padding: 0;
     span{
       display: block;
       width:100%;
@@ -40,7 +41,10 @@
         width:225px;
       }
       b{
-        font-size:1.5rem;
+        font-size:1.25rem;
+        @media all and (min-width: 768px){
+          font-size:1.5rem;
+        }
       }
       .cta-label{
         display: none;
