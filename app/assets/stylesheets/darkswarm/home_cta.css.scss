@@ -43,7 +43,9 @@
       display: block;
       width:100%;
       text-align:center;
+      text-decoration: underline;
       @media all and (min-width: 768px){
+        text-decoration: none;
         text-align:left;
         width:225px;
       }
