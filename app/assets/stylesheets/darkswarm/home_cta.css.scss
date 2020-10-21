@@ -36,13 +36,14 @@
     justify-content:center;
     align-items:center;
     flex-direction: column;
+    @media all and (min-width: 768px){
+      align-items: flex-end;
+    }
     span{
       display: block;
       width:100%;
       text-align:center;
-      float:none;
       @media all and (min-width: 768px){
-        float:right;
         text-align:left;
         width:225px;
       }
