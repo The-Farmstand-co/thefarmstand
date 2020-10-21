@@ -1,13 +1,15 @@
 .row.active_table_row{"ng-if" => "hub.is_distributor", "ng-click" => "toggle($event)", "ng-class" => "{'closed' : !open(), 'is_distributor' : producer.is_distributor}"}
   .columns.small-12.skinny-head
     %a.hub{"ng-href" => "{{::hub.path}}", "ng-attr-target" => "{{ embedded_layout ? '_blank' : undefined}}", "ng-class" => "{primary: hub.active, secondary: !hub.active}", "ofn-change-hub" => "hub", "data-is-link" => "true"}
-      %i{ng: {class: "::hub.icon_font"}}
+      / %i{ng: {class: "::hub.icon_font"}}
       %span.margin-top.hub-name-listing{"ng-bind" => "::hub.name | truncate:40"}
 
   .columns.small-12
-    %span.margin-top{"ng-bind" => "::hub.address.city"}
+    %span{"ng-style" => "::hub.promo_image"}
   .columns.small-12
+    %span.margin-top{"ng-bind" => "::hub.address.city"}
     %span.margin-top{"ng-bind" => "::hub.address.state_name"}
+  .columns.small-12
     %span.margin-top{"ng-if" => "hub.distance != null && hub.distance > 0"} ({{ hub.distance / 1000 | number:0 }} km)
 
   .columns.small-12.text-right{"ng-if" => "::hub.active"}
