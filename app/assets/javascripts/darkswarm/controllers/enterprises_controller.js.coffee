@@ -8,7 +8,7 @@ Darkswarm.controller "EnterprisesCtrl", ($scope, $rootScope, $timeout, $location
   $scope.show_profiles = true
   $scope.show_closed = true
   $scope.filtersActive = false
-  $scope.distanceMatchesShown = false
+  $scope.distanceMatchesShown = true
   $scope.closed_shops_loading = false
   $scope.closed_shops_loaded = false
   console.log($scope, $rootScope, $timeout, $location, Enterprises, Search, $document, HashNavigation, FilterSelectorsService, EnterpriseModal, enterpriseMatchesNameQueryFilter, distanceWithinKmFilter)
