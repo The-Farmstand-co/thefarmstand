@@ -33,7 +33,7 @@
 .row.active_table_row{"ng-if" => "!hub.is_distributor", "ng-class" => "closed"}
   .columns.small-12.skinny-head
     %a.hub{"ng-click" => "openModal(hub)", "ng-class" => "{primary: hub.active, secondary: !hub.active}"}
-      %i{ng: {class: "hub.icon_font"}}
+      %i{ng: {class: "::hub.icon_font"}}
       %span.margin-top.hub-name-listing{"ng-bind" => "::hub.name | truncate:40"}
 
   .columns.small-12
