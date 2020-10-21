@@ -32,11 +32,16 @@
     background: #303948;
     margin-bottom:0px;
     span{
-      display: block;
-      width:225px;
+      display: none;
+      width:100%;
       text-align:left;
       float:right;
+      @media all and (min-width: 768px){
+        display: block;
+        width:225px;
+      }
       b{
+        display: block!important;
         font-size:1.5rem;
       }
     }
