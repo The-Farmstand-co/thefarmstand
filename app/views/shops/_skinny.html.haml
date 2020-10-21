@@ -5,7 +5,7 @@
       %span.margin-top.hub-name-listing{"ng-bind" => "::hub.name | truncate:40"}
 
   .columns.small-12
-    %span{"ng-style" => "::hub.promo_image"}
+    %span.margin-top.hub_image{"ng-style" => "background:url({{::hub.promo_image}}"}
   .columns.small-12
     %span.margin-top{"ng-bind" => "::hub.address.city"}
     %span.margin-top{"ng-bind" => "::hub.address.state_name"}
