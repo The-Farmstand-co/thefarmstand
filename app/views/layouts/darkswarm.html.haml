@@ -8,10 +8,10 @@
     - if !Rails.env.production? || @noindex_meta_tag
       %meta{name: "robots", content: "noindex"}
     %title= content_for?(:title) ? "#{yield(:title)} - #{t(:title)}".html_safe : "#{t(:welcome_to)} #{t(:title)}"
-    - if Rails.env.production?
-      = favicon_link_tag
-    - else
-      = favicon_link_tag "/favicon-staging.ico"
+    / - if Rails.env.production?
+    /   = favicon_link_tag
+    / - else
+    /   = favicon_link_tag "/favicon-staging.ico"
 
     = stylesheet_link_tag "darkswarm/all"
     = csrf_meta_tags
