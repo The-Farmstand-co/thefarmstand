@@ -6,7 +6,7 @@
       / %i{ng: {class: "::hub.icon_font"}}
       %span.margin-top.hub-name-listing{"ng-bind" => "::hub.name | truncate:40"}
   .columns.small-12
-    %span.margin-top{"ng-bind" => "{{::hub.address.city}},"}
+    %span.margin-top{"ng-bind" => "{{::hub.address.city}}"}
     %span.margin-top{"ng-bind" => "::hub.address.state_name"}
   .columns.small-12
     %span.margin-top{"ng-if" => "hub.distance != null && hub.distance > 0"} ({{ hub.distance / 1000 | number:0 }} km)
